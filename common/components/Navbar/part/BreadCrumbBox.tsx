@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import {Box} from "../../../elements/element/Box";
+import {BoxDel} from "../../../elements/element/BoxDel";
 
 
-export const BreadCrumbBox = styled(Box)`
+export const BreadCrumbBox = styled(BoxDel)`
     display: flex;
     align-items: center;
 

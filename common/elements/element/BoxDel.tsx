@@ -26,7 +26,7 @@ const fontChanger =  (props,query) =>{
 }
 
 
-export const Box = styled.div<Box>`
+export const BoxDel = styled.div<Box>`
   cursor: ${props => props.cursorable ? `pointer` : undefined};
   font-size: ${props=> fontChanger(props,'DESKTOP')};
   & svg {
