@@ -5,7 +5,7 @@ interface ILayout {
     children: ReactNode | ReactElement;
 }
 
-export const Layout = styled.div<ILayout>`
-  width: 86vw;
+export const DashBoardLayout = styled.div<ILayout>`
+  width: 100vw;
 `;
 

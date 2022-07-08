@@ -1,4 +1,4 @@
-import {IProduce} from "../../../../../../util/interfaces/table";
+import {IProduce} from "../../../../../../ts/interfaces/table";
 import {useState} from "react";
 import BasicModal from "./BasicModal";
 

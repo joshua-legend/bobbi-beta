@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {WIDTH} from "../../styles/global/global-variable";
 
 /*
 * Container
@@ -13,7 +12,6 @@ interface Container {
 
 export const ContainerCustom = styled.div<Container>`
     width: 100%;
-    max-width: ${props=> props.size ? WIDTH[props.size] : undefined};
     margin-right: auto;
     margin-left: auto;
 `;

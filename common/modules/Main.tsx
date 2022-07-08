@@ -1,7 +1,7 @@
-import {Layout} from "../layouts/Layout";
+import {DashBoardLayout} from "../layouts/DashBoardLayout";
 import {RootLayout} from "../layouts/RootLayout";
-import SidebarComp from "../components/Sidebar/SidebarComp";
-import {NavbarComp} from "../components/Navbar/NavbarComp";
+import {Sidebar} from "../components/Sidebar/Sidebar";
+import {Navbar} from "../components/Navbar/Navbar";
 import React from "react";
 
 type DashboardLayoutProps = {
@@ -12,11 +12,11 @@ export default function Main({ children }: DashboardLayoutProps) {
 
     return (
         <RootLayout>
-            <SidebarComp />
-            <Layout>
-                <NavbarComp />
+            <Sidebar />
+            <DashBoardLayout>
+                <Navbar />
                 {children}
-            </Layout>
+            </DashBoardLayout>
         </RootLayout>
     );
 }

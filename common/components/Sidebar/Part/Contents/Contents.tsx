@@ -1,13 +1,13 @@
-import {Divider, List, ListItem, ListItemButton, ListItemIcon, ListItemText} from "@mui/material";
+import {Divider, List, ListItem, ListItemButton} from "@mui/material";
 import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
 import HandymanIcon from '@mui/icons-material/Handyman';
 import DinnerDiningIcon from '@mui/icons-material/DinnerDining';
 import ForumIcon from '@mui/icons-material/Forum';
 import Link from "next/link";
-import {SideBarListItemIcon} from "../Common/SideBarListItemIcon";
-import {SideBarListItemText} from "../Common/SideBarListItemText";
+import {SideBarListItemIcon} from "../../Common/SideBarListItemIcon";
+import {SideBarListItemText} from "../../Common/SideBarListItemText";
 
-export default function Contents() {
+export const Contents = () => {
 
     const contentObj = [
         {typo:"콘텐츠 관리",icon:<SupervisorAccountIcon />,url:""},
@@ -32,6 +32,5 @@ export default function Contents() {
             </List>
             <Divider />
         </>
-
     );
 }

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {PADDING} from "../../styles/global/global-variable";
 
 /*
 * Section
@@ -14,5 +13,4 @@ interface Section {
 
 export const Section = styled.section<Section>`
   width:100%;
-  padding: ${props=> props.padding ? PADDING[props.padding] : undefined} 0;
 `;

@@ -1,8 +1,7 @@
 import {SelectSection} from "./part/select/SelectSection";
 import {TableSection} from "./part/table/TableSection";
-import {SelectContainer} from "./part/select/SelectContainer";
 import {Dropdown} from "./part/select/Dropdown";
-import {ProduceItem} from "../../../../util/constants/produceItem";
+import {ProduceItem} from "../../../../constants/produceItem";
 import {Input} from "../../../elements/element/Input";
 import {SelectButton} from "./part/select/SelectButton";
 import {useEffect, useState} from "react";
@@ -58,13 +57,12 @@ const ProduceComp:NextPage = () => {
 
     return (
         <>
-
             <SelectSection>
-                <SelectContainer size={"fluid"}>
+                <Container>
                     <Dropdown items={dropdownObj} />
                     <Input />
                     <SelectButton>검색</SelectButton>
-                </SelectContainer>
+                </Container>
             </SelectSection>
             <TableSection>
                 <TableContainer>

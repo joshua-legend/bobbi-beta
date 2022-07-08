@@ -1,10 +1,10 @@
-import {List, ListItem, ListItemButton, ListItemIcon, ListItemText} from "@mui/material";
+import {List, ListItem, ListItemButton} from "@mui/material";
 import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 import Link from "next/link";
-import {SideBarListItemIcon} from "../Common/SideBarListItemIcon";
-import {SideBarListItemText} from "../Common/SideBarListItemText";
+import {SideBarListItemIcon} from "../../Common/SideBarListItemIcon";
+import {SideBarListItemText} from "../../Common/SideBarListItemText";
 
-export default function Admin() {
+export const Admin = () => {
 
     const adminObj = [
         {typo:"관리자 관리",icon:<SupervisorAccountIcon />,url:""},

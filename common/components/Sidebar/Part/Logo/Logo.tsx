@@ -1,7 +1,7 @@
 import {Box, Divider, Typography} from "@mui/material";
 import {styled} from "@mui/material/styles";
 
-export default function Logo() {
+export const Logo = () => {
 
     const LogoTypography = styled(Typography)`
       margin: 5rem 2rem;
