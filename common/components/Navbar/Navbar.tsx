@@ -10,7 +10,6 @@ export const Navbar = () => {
     const router = useRouter();
     const {parent, child} = BREAD.find(obj =>obj.url === router.pathname);
 
-
     return (
         <Stack
             sx={{margin:"5rem"}}
@@ -19,7 +18,7 @@ export const Navbar = () => {
             alignItems="center"
         >
             <BreadCrumb parent={parent} child={child} />
-            <Profile id={"김바비(admin1)"} ></Profile>
+            <Profile id={"김바비(admin1)"}></Profile>
         </Stack>
     );
 }
