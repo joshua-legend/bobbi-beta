@@ -1,6 +1,4 @@
-import {Breadcrumbs, Divider, List, ListItem, ListItemButton, Stack, Typography} from "@mui/material";
-import Link from "next/link";
-import {Person} from "@mui/icons-material";
+import {Breadcrumbs, Stack, Typography} from "@mui/material";
 import {ChevronRight} from "@styled-icons/material";
 
 interface IBreadCrumb {
@@ -9,8 +7,6 @@ interface IBreadCrumb {
 }
 
 export const BreadCrumb = ({parent,child}:IBreadCrumb) => {
-
-
     return (
         <>
             <Stack spacing={2}>

@@ -1,10 +1,8 @@
-import {ChevronRight} from "@styled-icons/material";
-import {BreadCrumbContainer} from "./Part/BreadCrumbContainer";
 import {useRouter} from "next/router";
 import {BREADCRUMB_MENU as BREAD} from "../../../constants/breadcrumb";
-import {Box, Breadcrumbs, Stack, Typography} from "@mui/material";
-import Link from "next/link";
+import {Box, Stack} from "@mui/material";
 import {BreadCrumb} from "./Part/BreadCrumb/BreadCrumb";
+import {Profile} from "./Part/Profile/Profile";
 
 
 export const Navbar = () => {
@@ -14,14 +12,14 @@ export const Navbar = () => {
 
 
     return (
-        <Stack>
-            <BreadCrumbContainer size={"fluid"}>
-                <BreadCrumb parent={parent} child={child} />
-                <Box>
-                    <span>김바비(admin1)</span>
-                    <span>로그아웃</span>
-                </Box>
-            </BreadCrumbContainer>
+        <Stack
+            sx={{margin:"5rem"}}
+            direction="row"
+            justifyContent="space-between"
+            alignItems="center"
+        >
+            <BreadCrumb parent={parent} child={child} />
+            <Profile id={"김바비(admin1)"} ></Profile>
         </Stack>
     );
 }
